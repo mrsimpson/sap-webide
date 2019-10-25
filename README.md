@@ -18,3 +18,7 @@ docker run -p 8080:8080 mrsimpson/sap-webide:latest
 
 Open a browser pointing it to http://localhost:8080/webide/index.html
 You need to create an account on first use.
+
+## Credits
+
+To Aydin Tekin for [his blog](https://blogs.sap.com/2017/04/25/how-to-run-sap-webide-personal-edition-on-linux/) letting me know how to run WebIDE on Linux
