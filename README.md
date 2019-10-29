@@ -13,7 +13,14 @@ By pulling or building this image, you accept the license agreement of the [SAP 
 ## How to run it
 
 ```bash
-ocker run -p 8080:8080 -p 36295:36295 --network=sap --name sap-webide sap-webide:latest
+docker run -p 8080:8080 -p 36295:36295 --network=sap --name sap-webide sap-webide:latest
+```
+
+If you need to connect to another system (which is not NPL running in the same docker network), you need to provide an own connection.
+This can be done by either forking this repository or by creating the distination files and then mounting them into the container when running it:
+
+```bash
+docker run ... <localFolder>:/opt/eclipse/config_master/service.destinations/destinations ...
 ```
 
 Open a browser pointing it to http://localhost:8080/webide/index.html
