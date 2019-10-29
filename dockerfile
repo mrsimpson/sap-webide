@@ -20,6 +20,9 @@ COPY --from=build-env /tmp/sap-webide/eclipse/features /opt/eclipse/features
 COPY --from=build-env /tmp/sap-webide/eclipse/p2 /opt/eclipse/p2
 COPY --from=build-env /tmp/sap-webide/eclipse/plugins /opt/eclipse/plugins
 
+# Add destinations
+COPY destinations /opt/eclipse/config_master/service.destinations/destinations
+
 RUN chmod +x /opt/eclipse/orion
 
 WORKDIR /opt/eclipse

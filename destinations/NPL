@@ -1,0 +1,11 @@
+Description=NPL
+Type=HTTP
+TrustAll=true
+Authentication=NoAuthentication
+Name=NPL
+ProxyType=Internet
+URL=http\://nwabap752\:8000
+WebIDEUsage=odata_abap,odata_gen,ui5_execute_abap,dev_abap,bsp_execute_abap,odata_xs
+WebIDESystem=NPL
+WebIDEEnabled=true
+sap-client=001
