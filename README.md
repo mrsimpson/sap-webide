@@ -13,7 +13,7 @@ By pulling or building this image, you accept the license agreement of the [SAP 
 ## How to run it
 
 ```bash
-ocker run -p 8080:8080 -p 36295:36295 --network=sap --name sap-webide sap-webide:latest
+docker run -p 8080:8080 -p 36295:36295 --network=sap --name sap-webide sap-webide:latest
 ```
 
 Open a browser pointing it to http://localhost:8080/webide/index.html
